@@ -1,209 +1,175 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipak. Study Center</title>
 
-    <title>Dipak. Study Center</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7ff;
-            color: #222;
-        }
+    header {
+      background: #1565c0;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-        header {
-            background: #182848;
-            color: white;
-            padding: 18px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    header h1 {
+      font-size: 30px;
+    }
 
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-        }
+    nav {
+      background: #0d47a1;
+      text-align: center;
+      padding: 12px;
+    }
 
-        .hero {
-            padding: 70px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #182848, #4b6cb7);
-            color: white;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: white;
+    }
 
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
+    .hero h2 {
+      font-size: 32px;
+      color: #1565c0;
+      margin-bottom: 15px;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 22px;
-            margin: 5px;
-            border-radius: 25px;
-            background: white;
-            color: #182848;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
 
-        .section {
-            padding: 45px 20px;
-            text-align: center;
-        }
+    .btn {
+      display: inline-block;
+      background: #1565c0;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .section h2 {
-            margin-bottom: 25px;
-            font-size: 30px;
-        }
+    .courses {
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        .courses {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 18px;
-            max-width: 900px;
-            margin: auto;
-        }
+    .courses h2 {
+      margin-bottom: 25px;
+      color: #1565c0;
+    }
 
-        .card {
-            background: white;
-            padding: 25px 15px;
-            border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-        }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-        .card h3 {
-            margin-top: 10px;
-        }
+    .card {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
 
-        .challenge {
-            background: #fff;
-            max-width: 700px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 18px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-        }
+    .card h3 {
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
 
-        footer {
-            background: #182848;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-    </style>
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">🎓 Dipak. Study Center</div>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#quiz">Quiz</a>
-    </nav>
-</header>
-
-<section class="hero">
-
+  <header>
     <h1>Dipak. Study Center</h1>
+    <p>आपकी पढ़ाई, आपकी सफलता</p>
+  </header>
 
-    <p>सीखिए आज, बढ़िए कल 🚀</p>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <p>
-        आपकी पढ़ाई को आसान, स्मार्ट और बेहतर बनाने का डिजिटल प्लेटफॉर्म।
-    </p>
+  <section class="hero">
+    <h2>Welcome to Dipak. Study Center</h2>
+    <p>घर बैठे पढ़ाई करें और अपने लक्ष्य की ओर आगे बढ़ें।</p>
+    <a href="#courses" class="btn">Courses देखें</a>
+  </section>
 
-    <br>
+  <section class="courses" id="courses">
+    <h2>हमारे Courses</h2>
 
-    <a href="#courses" class="btn">📚 Start Learning</a>
-    <a href="#quiz" class="btn">🧠 Daily Quiz</a>
+    <div class="cards">
 
-</section>
+      <div class="card">
+        <h3>Class 10</h3>
+        <p>Class 10 के लिए पढ़ाई और अध्ययन सामग्री।</p>
+      </div>
 
-<section class="section" id="courses">
+      <div class="card">
+        <h3>Class 12</h3>
+        <p>Class 12 के लिए महत्वपूर्ण अध्ययन सामग्री।</p>
+      </div>
 
-    <h2>📚 Popular Courses</h2>
-
-    <div class="courses">
-
-        <div class="card">
-            <div style="font-size:40px;">📐</div>
-            <h3>Mathematics</h3>
-            <p>Math सीखें आसान तरीके से।</p>
-        </div>
-
-        <div class="card">
-            <div style="font-size:40px;">🔬</div>
-            <h3>Science</h3>
-            <p>Science को समझें और सीखें।</p>
-        </div>
-
-        <div class="card">
-            <div style="font-size:40px;">📖</div>
-            <h3>Hindi</h3>
-            <p>Hindi की बेहतर तैयारी करें।</p>
-        </div>
-
-        <div class="card">
-            <div style="font-size:40px;">🔤</div>
-            <h3>English</h3>
-            <p>English को आसान तरीके से सीखें।</p>
-        </div>
+      <div class="card">
+        <h3>General Knowledge</h3>
+        <p>GK और सामान्य ज्ञान की तैयारी करें।</p>
+      </div>
 
     </div>
+  </section>
 
-</section>
+  <section class="courses" id="about">
+    <h2>About Us</h2>
+    <p>Dipak. Study Center का उद्देश्य विद्यार्थियों को आसान और उपयोगी अध्ययन सामग्री उपलब्ध कराना है।</p>
+  </section>
 
-<section class="section" id="quiz">
+  <section class="courses" id="contact">
+    <h2>Contact</h2>
+    <p>पढ़ाई से जुड़ी जानकारी के लिए हमसे संपर्क करें।</p>
+  </section>
 
-    <h2>🎯 Daily Learning Challenge</h2>
-
-    <div class="challenge">
-
-        <h3>आज का Challenge</h3>
-
-        <p style="margin:15px 0;">
-            हर दिन नए सवाल हल करें और अपनी तैयारी मजबूत करें।
-        </p>
-
-        <a href="#" class="btn">Start Quiz →</a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <h3>Dipak. Study Center</h3>
-
-    <p>Learn • Practice • Grow</p>
-
+  <footer>
     <p>© 2026 Dipak. Study Center</p>
-
-</footer>
+  </footer>
 
 </body>
-  </html>
+</html>
