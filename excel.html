@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Microsoft Excel - Dipak. Study Center</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8f5;
+            color: #222;
+        }
+
+        header {
+            background: #107c41;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .box {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+        }
+
+        h2 {
+            color: #107c41;
+        }
+
+        ul, ol {
+            line-height: 1.9;
+        }
+
+        .shortcut {
+            background: #eaf6ef;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 8px 0;
+        }
+
+        .formula {
+            background: #f1f1f1;
+            padding: 12px;
+            border-left: 4px solid #107c41;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+
+        .back {
+            display: inline-block;
+            background: #107c41;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .back:hover {
+            background: #075b2f;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Microsoft Excel</h1>
+    <p>Dipak. Study Center - Computer Course</p>
+</header>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Microsoft Excel क्या है?</h2>
+        <p>
+            Microsoft Excel एक Spreadsheet Software है।
+            इसका उपयोग Data को व्यवस्थित करने, गणना करने,
+            Table बनाने और Charts तैयार करने के लिए किया जाता है।
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Excel के प्रमुख उपयोग</h2>
+        <ul>
+            <li>Data Entry करना</li>
+            <li>Calculation करना</li>
+            <li>Table बनाना</li>
+            <li>Marksheet बनाना</li>
+            <li>Salary और खर्च का हिसाब रखना</li>
+            <li>Charts बनाना</li>
+            <li>Data को Sort और Filter करना</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Row, Column और Cell क्या है?</h2>
+
+        <p>
+            <b>Row:</b> Excel में बाएँ से दाएँ जाने वाली क्षैतिज लाइन को Row कहते हैं।
+        </p>
+
+        <p>
+            <b>Column:</b> Excel में ऊपर से नीचे जाने वाली लंबवत लाइन को Column कहते हैं।
+        </p>
+
+        <p>
+            <b>Cell:</b> Row और Column के मिलने से बनने वाले स्थान को Cell कहते हैं।
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Excel में Formula क्या है?</h2>
+
+        <p>
+            Excel में गणना करने के लिए Formula का उपयोग किया जाता है।
+            Formula हमेशा <b>=</b> चिन्ह से शुरू होता है।
+        </p>
+
+        <div class="formula">
+            =A1+B1
+        </div>
+
+        <div class="formula">
+            =A1-B1
+        </div>
+
+        <div class="formula">
+            =A1*B1
+        </div>
+
+        <div class="formula">
+            =A1/B1
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>महत्वपूर्ण Excel Functions</h2>
+
+        <div class="formula">
+            =SUM(A1:A10)
+        </div>
+        <p>कई Numbers का जोड़ निकालने के लिए।</p>
+
+        <div class="formula">
+            =AVERAGE(A1:A10)
+        </div>
+        <p>औसत निकालने के लिए।</p>
+
+        <div class="formula">
+            =MAX(A1:A10)
+        </div>
+        <p>सबसे बड़ी संख्या पता करने के लिए।</p>
+
+        <div class="formula">
+            =MIN(A1:A10)
+        </div>
+        <p>सबसे छोटी संख्या पता करने के लिए।</p>
+
+        <div class="formula">
+            =COUNT(A1:A10)
+        </div>
+        <p>Numbers वाले Cells की संख्या गिनने के लिए।</p>
+    </div>
+
+    <div class="box">
+        <h2>Excel में Table कैसे बनाएँ?</h2>
+
+        <ol>
+            <li>Excel खोलें।</li>
+            <li>अपना Data लिखें।</li>
+            <li>पूरे Data को Select करें।</li>
+            <li>Insert Tab पर जाएँ।</li>
+            <li>Table विकल्प चुनें।</li>
+            <li>OK पर क्लिक करें।</li>
+        </ol>
+    </div>
+
+    <div class="box">
+        <h2>Excel में Chart क्या है?</h2>
+
+        <p>
+            Chart का उपयोग Data को Graphical रूप में दिखाने के लिए किया जाता है।
+            Excel में Column Chart, Bar Chart, Line Chart और Pie Chart जैसे
+            अलग-अलग प्रकार के Charts बनाए जा सकते हैं।
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Excel की महत्वपूर्ण Shortcut Keys</h2>
+
+        <div class="shortcut"><b>Ctrl + N</b> → नया Workbook</div>
+        <div class="shortcut"><b>Ctrl + O</b> → Workbook खोलना</div>
+        <div class="shortcut"><b>Ctrl + S</b> → Save करना</div>
+        <div class="shortcut"><b>Ctrl + P</b> → Print करना</div>
+        <div class="shortcut"><b>Ctrl + C</b> → Copy</div>
+        <div class="shortcut"><b>Ctrl + V</b> → Paste</div>
+        <div class="shortcut"><b>Ctrl + X</b> → Cut</div>
+        <div class="shortcut"><b>Ctrl + Z</b> → Undo</div>
+        <div class="shortcut"><b>Ctrl + A</b> → Select All</div>
+        <div class="shortcut"><b>Ctrl + F</b> → Find</div>
+    </div>
+
+    <div class="box">
+        <h2>Excel सीखने का लाभ</h2>
+
+        <p>
+            Microsoft Excel सीखने से विद्यार्थी Data Entry,
+            हिसाब-किताब, Marksheet, Office Work और कई प्रकार के
+            Computer से जुड़े कार्य आसानी से कर सकते हैं।
+        </p>
+    </div>
+
+    <a class="back" href="index.html">← मुख्य पेज पर जाएँ</a>
+
+</div>
+
+<footer>
+    <p>© 2026 Dipak. Study Center | Computer Course</p>
+</footer>
+
+</body>
+  </html>
