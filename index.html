@@ -5,28 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dipak. Study Center</title>
 
-  <style>.class10-card {
-  background: white;
-  width: 100%;
-  max-width: 560px;
-  margin: 20px auto;
-  padding: 25px;
-  border: 3px solid #1565c0;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.class10-card h3 {
-  color: #1565c0;
-  margin-bottom: 10px;
-  font-size: 28px;
-}
-
-.class10-card p {
-  font-size: 18px;
-  margin: 10px 0;
-}
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -111,33 +90,32 @@
       justify-content: center;
       gap: 20px;
     }
-.computer-card {
-  background: white;
-  width: 100%;
-  max-width: 560px;
-  margin: 20px auto;
-  padding: 25px;
-  border: 3px solid #1565c0;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
 
-.computer-card h3 {
-  color: #1565c0;
-  margin-bottom: 10px;
-  font-size: 28px;
-}
+    /* सभी Course Box एक जैसे */
+    .card,
+    .computer-card {
+      background: white;
+      width: 100%;
+      max-width: 560px;
+      margin: 20px auto;
+      padding: 25px;
+      border: 3px solid #1565c0;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-.computer-card p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-    
-
-    .card h3 {
+    .card h3,
+    .computer-card h3 {
       color: #1565c0;
       margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .card p,
+    .computer-card p {
+      font-size: 18px;
+      margin: 10px 0;
     }
 
     footer {
@@ -154,7 +132,7 @@
 
   <header>
     <h1>Dipak. Study Center</h1>
-    <p> आपकी मेहनत, आपकी सफलता का कूंची है( हिट द टारगेट 🎯 सेट द टारगेट 🎯)</p>
+    <p>आपकी मेहनत, आपकी सफलता की कुंजी है (हिट द टारगेट 🎯 सेट द टारगेट 🎯)</p>
   </header>
 
   <nav>
@@ -167,104 +145,139 @@
 
   <section class="hero">
     <h2>Welcome to Dipak. Study Center</h2>
-    <p> अब आ चुका है Dipak. Study Center आपके लिए online wabsite ले के आ चुका है घर बैठे पढ़ाई करें और अपने लक्ष्य की ओर आगे बढ़ें।</p>
+
+    <p>
+      अब आ चुका है Dipak. Study Center आपके लिए online website
+      ले के आ चुका है। घर बैठे पढ़ाई करें और अपने लक्ष्य की ओर आगे बढ़ें।
+    </p>
+
     <a href="#courses" class="btn">Courses देखें</a>
   </section>
 
   <section class="courses" id="courses">
+
     <h2>Courses</h2>
 
     <div class="cards">
 
+      <!-- Class 10 -->
       <div class="card">
-        <h3>Class 10</h3>
-        <p>Class 10 के लिए पढ़ाई और अध्ययन सामग्री PDF</p>
+        <h3>📚 Class 10</h3>
+
+        <p>
+          Class 10 के लिए पढ़ाई और
+          अध्ययन सामग्री PDF
+        </p>
       </div>
 
+      <!-- Class 12 -->
       <div class="card">
-        <h3>Class 12</h3>
-        <p>Class 12 के लिए महत्वपूर्ण अध्ययन सामग्री PDF</p>
+        <h3>📖 Class 12</h3>
+
+        <p>
+          Class 12 के लिए महत्वपूर्ण
+          अध्ययन सामग्री PDF
+        </p>
       </div>
 
+      <!-- General Knowledge -->
       <div class="card">
-        <h3>General Knowledge</h3>
-        <p>GK और सामान्य PDF</p>
+        <h3>🌎 General Knowledge</h3>
+
+        <p>
+          GK और सामान्य ज्ञान की
+          महत्वपूर्ण PDF
+        </p>
       </div>
 
-    </div> 
-    <div class="computer-card">
-  <h3>💻 Computer Course</h3>
+      <!-- Computer Course -->
+      <div class="computer-card">
+        <h3>💻 Computer Course</h3>
 
-  <p>
-    Basic से लेकर जरूरी Computer topics तक
-    आसान भाषा में सीखें।
-  </p>
+        <p>
+          Basic से लेकर जरूरी Computer
+          topics तक आसान भाषा में सीखें।
+        </p>
 
-  <p>🖥️ Windows | 📝 Word | 📊 Excel</p>
+        <p>
+          🖥️ Windows | 📝 Word | 📊 Excel
+        </p>
 
-  <a href="computer-course.html" class="btn">
-    🚀 Course शुरू करें
-  </a>
-</div>
+        <a href="computer-course.html" class="btn">
+          🚀 Course शुरू करें
+        </a>
+      </div>
+
+    </div>
+
   </section>
 
   <section class="hero">
-  <h2>💻 Computer Course सीखें</h2>
 
-  <p>
-    Dipak. Study Center पर घर बैठे Computer की
-    जरूरी जानकारी आसान भाषा में सीखें।
-  </p>
+    <h2>💻 Computer Course सीखें</h2>
 
-  <p>
-    Windows • Word • Excel • PowerPoint • Photoshop
-  </p>
+    <p>
+      Dipak. Study Center पर घर बैठे Computer की
+      जरूरी जानकारी आसान भाषा में सीखें।
+    </p>
 
-  <a href="computer-course.html" class="btn">
-    🚀 Computer Course शुरू करें
-  </a>
-</section><section class="courses" id="about">
-  <h2>📚 About Us</h2>
+    <p>
+      Windows • Word • Excel • PowerPoint • Photoshop
+    </p>
 
-  <p>
-    Dipak. Study Center का उद्देश्य विद्यार्थियों को
-    Computer की जरूरी जानकारी आसान भाषा में उपलब्ध कराना है।
-  </p>
+    <a href="computer-course.html" class="btn">
+      🚀 Computer Course शुरू करें
+    </a>
 
-  <p style="margin-top: 15px;">
-    💻 यहाँ Computer Course के अलग-अलग topics
-    step-by-step सीखने की सुविधा दी गई है।
-  </p>
-
-  <p style="margin-top: 15px;">
-    🎯 हमारा लक्ष्य है कि विद्यार्थी Computer का
-    ज्ञान आसानी से सीख सकें और अपने skills को बेहतर बना सकें।
-  </p>
   </section>
 
-<section class="courses" id="contact">
-  <h2>📞 Contact</h2>
+  <section class="courses" id="about">
 
-  <p>
-    Computer Course या वेबसाइट से संबंधित जानकारी के लिए
-    हमसे संपर्क कर सकते हैं।
-  </p>
+    <h2>📚 About Us</h2>
 
-  <p style="margin-top: 15px;">
-    👤 Name: Dipak Russell
-  </p>
+    <p>
+      Dipak. Study Center का उद्देश्य विद्यार्थियों को
+      Computer की जरूरी जानकारी आसान भाषा में उपलब्ध कराना है।
+    </p>
 
-  <p style="margin-top: 10px;">
-    📧 Email: russellrobotd@gmail.com
-  </p>
+    <p style="margin-top: 15px;">
+      💻 यहाँ Computer Course के अलग-अलग topics
+      step-by-step सीखने की सुविधा दी गई है।
+    </p>
 
-  <p style="margin-top: 10px;">
-    📱 Mobile: +91 9693036797
-  </p>
-</section>
+    <p style="margin-top: 15px;">
+      🎯 हमारा लक्ष्य है कि विद्यार्थी Computer का
+      ज्ञान आसानी से सीख सकें और अपने skills को बेहतर बना सकें।
+    </p>
+
+  </section>
+
+  <section class="courses" id="contact">
+
+    <h2>📞 Contact</h2>
+
+    <p>
+      Computer Course या वेबसाइट से संबंधित जानकारी के लिए
+      हमसे संपर्क कर सकते हैं।
+    </p>
+
+    <p style="margin-top: 15px;">
+      👤 Name: Dipak Russell
+    </p>
+
+    <p style="margin-top: 10px;">
+      📧 Email: russellrobotd@gmail.com
+    </p>
+
+    <p style="margin-top: 10px;">
+      📱 Mobile: +91 9693036797
+    </p>
+
+  </section>
+
   <footer>
     <p>© 2026 Dipak. Study Center 9693036797</p>
   </footer>
 
 </body>
-</html>
+  </html>
