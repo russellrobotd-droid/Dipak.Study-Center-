@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign In - Dipak. Study Center</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-box {
+      background: white;
+      width: 100%;
+      max-width: 420px;
+      padding: 30px;
+      border: 3px solid #1565c0;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-box h1 {
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+
+    .login-box p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 13px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 13px;
+      margin-top: 15px;
+      background: #1565c0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background: #0d47a1;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <h1>🔐 Sign In</h1>
+
+    <p>Dipak. Study Center</p>
+
+    <input
+      type="email"
+      id="email"
+      placeholder="अपना Email लिखें"
+    >
+
+    <input
+      type="password"
+      id="password"
+      placeholder="अपना Password लिखें"
+    >
+
+    <button onclick="login()">
+      Sign In
+    </button>
+
+    <button onclick="signup()">
+      Create Account
+    </button>
+
+    <p id="message"></p>
+
+    <a href="index.html" class="back">
+      ← वापस Home पर जाएँ
+    </a>
+
+  </div>
+
+
+  <!-- Firebase -->
+  <script type="module">
+
+    import { initializeApp } from
+    "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+    import {
+      getAuth,
+      signInWithEmailAndPassword,
+      createUserWithEmailAndPassword
+    } from
+    "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBwNXefQ7WfxN9zkTZh9PdBxOaHp3s0",
+      authDomain: "dipak-study-center.firebaseapp.com",
+      projectId: "dipak-study-center",
+      storageBucket: "dipak-study-center.firebasestorage.app",
+      messagingSenderId: "183656924132",
+      appId: "1:183656924132:web:a4f3906f93a608b71e3df1"
+    };
+
+
+    const app = initializeApp(firebaseConfig);
+
+    const auth = getAuth(app);
+
+
+    window.signup = async function() {
+
+      const email =
+        document.getElementById("email").value;
+
+      const password =
+        document.getElementById("password").value;
+
+      const message =
+        document.getElementById("message");
+
+
+      if (!email || !password) {
+        message.innerText =
+          "कृपया Email और Password भरें।";
+        return;
+      }
+
+
+      try {
+
+        await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
+
+        message.innerText =
+          "✅ Account सफलतापूर्वक बन गया!";
+
+      } catch (error) {
+
+        message.innerText =
+          "❌ " + error.message;
+
+      }
+
+    };
+
+
+    window.login = async function() {
+
+      const email =
+        document.getElementById("email").value;
+
+      const password =
+        document.getElementById("password").value;
+
+      const message =
+        document.getElementById("message");
+
+
+      if (!email || !password) {
+        message.innerText =
+          "कृपया Email और Password भरें।";
+        return;
+      }
+
+
+      try {
+
+        await signInWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
+
+        message.innerText =
+          "✅ Sign In सफल हुआ!";
+
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000);
+
+      } catch (error) {
+
+        message.innerText =
+          "❌ Email या Password गलत है।";
+
+      }
+
+    };
+
+  </script>
+
+</body>
+  </html>
